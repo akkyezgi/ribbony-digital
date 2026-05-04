@@ -6,6 +6,8 @@ import { useTranslations, useLocale } from 'next-intl';
 import SectionTitle from '@/components/ui/SectionTitle';
 import Testimonials from '@/components/sections/Testimonials';
 import Button from '@/components/ui/Button';
+import ClientLogosMarquee from '@/components/sections/ClientLogosMarquee';
+import { useContactPopup } from '@/lib/contact-popup-context';
 
 const ITEM_COUNT = 6;
 
@@ -18,6 +20,7 @@ const CATEGORY_COLORS: Record<string, string> = {
 };
 
 export default function ReferencesSection() {
+  const { openPopup } = useContactPopup();
   const t = useTranslations('references');
   const locale = useLocale() as 'tr' | 'en';
   const prefix = locale === 'en' ? '/en' : '';
@@ -76,6 +79,9 @@ export default function ReferencesSection() {
           </motion.p>
         </div>
       </section>
+
+      {/* ── Client logos ──────────────────────────────────────── */}
+      <ClientLogosMarquee variant="grid" />
 
       {/* ── Filter + Grid ─────────────────────────────────────── */}
       <section className="bg-white py-16 md:py-24">
@@ -175,7 +181,7 @@ export default function ReferencesSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
-              <Button href={`${prefix}/iletisim`} variant="filled" size="lg">
+              <Button onClick={openPopup} variant="filled" size="lg">
                 {locale === 'tr' ? 'Teklif Al' : 'Get a Quote'}
               </Button>
               <Button href={`${prefix}/hizmetler`} variant="ghost" size="lg">

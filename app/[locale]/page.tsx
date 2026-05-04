@@ -6,6 +6,8 @@ import ServicesGrid from '@/components/sections/ServicesGrid';
 import WhyRibbony from '@/components/sections/WhyRibbony';
 import Testimonials from '@/components/sections/Testimonials';
 import CtaSection from '@/components/sections/CtaSection';
+import ClientLogosMarquee from '@/components/sections/ClientLogosMarquee';
+import ToolsMarquee from '@/components/sections/ToolsMarquee';
 import { getHomeMetadata, organizationSchema } from '@/lib/metadata';
 import type { Locale } from '@/i18n';
 import { setRequestLocale } from 'next-intl/server';
@@ -34,7 +36,9 @@ export default function HomePage({ params: { locale } }: Props) {
       <HeroSection />
       <MarqueeStrip />
       <ServicesGrid />
+      <ToolsMarquee />
       <WhyRibbony />
+      <ClientLogosMarquee />
       <Testimonials />
       <CtaSection />
     </>

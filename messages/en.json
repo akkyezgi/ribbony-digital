@@ -16,17 +16,14 @@
     }
   },
   "hero": {
-    "badge": "Your Digital Transformation Partner",
+    "badge": "Your Technology & Growth Partner in Digital",
     "title": "We Elevate Your Brand to the Top of the Digital World",
     "description": "We strengthen your brand's digital presence through data-driven strategies in SEO, social media, ad management, and content creation.",
     "ctaPrimary": "Get Free Analysis",
     "ctaSecondary": "Explore Services",
-    "stat1Value": "50+",
-    "stat1Label": "Happy Clients",
-    "stat2Value": "120+",
-    "stat2Label": "Projects Completed",
-    "stat3Value": "98%",
-    "stat3Label": "Satisfaction Rate",
+    "feature1": "Data-Driven Strategy",
+    "feature2": "Transparent Reporting",
+    "feature3": "Measurable Results",
     "cardTitle": "Campaign Performance",
     "cardSocial": "Social Media",
     "cardAds": "Ad Management",
@@ -79,6 +76,10 @@
       "icerik-uretimi": {
         "title": "Content Creation",
         "description": "We amplify your brand's voice through SEO-friendly blog posts, social media content, and visual designs."
+      },
+      "yapay-zeka-optimizasyonu": {
+        "title": "AI Optimization",
+        "description": "We automate business processes with AI tools, accelerate content production, and enhance data analysis to create competitive advantage."
       }
     }
   },
@@ -164,9 +165,9 @@
     "privacyLink": "Privacy Policy",
     "cookiesLink": "Cookie Policy",
     "copyright": "© {year} Ribbony. All rights reserved.",
-    "address": "Levent, Istanbul, Turkey",
-    "phone": "+90 (212) 000 00 00",
-    "email": "info@ribbony.com"
+    "address": "Ankara | Istanbul",
+    "phone": "+90 551 101 42 88",
+    "email": "info@ribbonydigital.com"
   },
   "contact": {
     "pageTitle": "Contact",
@@ -174,11 +175,11 @@
     "heroDescription": "Fill out the form to discuss your project. Our expert team will contact you within 24 hours.",
     "infoTitle": "Contact Information",
     "addressLabel": "Address",
-    "address": "Levent District, Büyükdere Ave. No:1\nŞişli, Istanbul 34394",
+    "address": "Ankara | Istanbul",
     "phoneLabel": "Phone",
-    "phone": "+90 (212) 000 00 00",
+    "phone": "+90 551 101 42 88",
     "emailLabel": "Email",
-    "email": "info@ribbony.com",
+    "email": "info@ribbonydigital.com",
     "hoursLabel": "Working Hours",
     "hours": "Monday – Friday: 09:00 – 18:00",
     "form": {
@@ -227,7 +228,7 @@
     "heroDescription": "Operating from Istanbul since 2021, Ribbony has accompanied over 50 brands on their digital transformation journey.",
     "storyEyebrow": "Our Story",
     "storyTitle": "Where We Come From, Where We're Going",
-    "storyP1": "Ribbony was founded to simplify the complex world of digital marketing for brands. Our founders observed that bureaucratic processes in large agencies were limiting brands' potential, so they built an agile, transparent, and results-oriented model.",
+    "storyP1": "Ribbony was founded to simplify the complex world of digital marketing for brands. Our founders observed that bureaucratic processes in large companies were limiting brands' potential, so they built an agile, transparent, and results-oriented model.",
     "storyP2": "Today we work with over 50 brands and have successfully completed more than 120 projects. Our team consists of SEO specialists, content strategists, paid media experts, and creative designers.",
     "missionTitle": "Our Mission",
     "missionContent": "To maximize brands' digital potential through data-driven strategies and creative content.",
@@ -382,6 +383,38 @@
   "cookies": {
     "pageTitle": "Cookie Policy",
     "lastUpdated": "Last updated: January 2025"
+  },
+  "sss": {
+    "pageTitle": "FAQ",
+    "heroTitle": "Frequently Asked Questions",
+    "heroDescription": "Find answers to everything you want to know. If you can't find it, reach out to us.",
+    "searchPlaceholder": "Search questions...",
+    "noResults": "We couldn't find the question you're looking for.",
+    "categories": {
+      "all": "All",
+      "genel": "General",
+      "hizmetler": "Services",
+      "fiyatlandirma": "Pricing",
+      "teknik": "Technical",
+      "surec": "Process"
+    }
+  },
+  "araclar": {
+    "pageTitle": "Tools",
+    "heroTitle": "Digital Marketing Tools",
+    "heroDescription": "Discover the best tools used by professionals and strengthen your digital strategy.",
+    "categories": {
+      "all": "All",
+      "seo": "SEO",
+      "sosyal-medya": "Social Media",
+      "reklam": "Advertising",
+      "analitik": "Analytics",
+      "ai": "Artificial Intelligence"
+    },
+    "visitTool": "Visit Tool",
+    "freeLabel": "Free",
+    "paidLabel": "Paid",
+    "freemiumLabel": "Freemium"
   },
   "notFound": {
     "title": "Page Not Found",

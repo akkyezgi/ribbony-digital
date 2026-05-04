@@ -68,8 +68,8 @@ function buildMetadata({
       title: fullTitle,
       description,
       images: [ogImageUrl],
-      creator: '@ribbony',
-      site: '@ribbony',
+      creator: '@ribbonydigital',
+      site: '@ribbonydigital',
     },
   };
 }
@@ -80,30 +80,30 @@ export function getHomeMetadata(locale: Locale): Metadata {
     path: '/',
     title:
       locale === 'tr'
-        ? 'Kurumsal Dijital Pazarlama Ajansı'
-        : 'Corporate Digital Marketing Agency',
+        ? 'Kurumsal Dijital Pazarlama Şirketi'
+        : 'Corporate Digital Marketing Company',
     description:
       locale === 'tr'
-        ? 'Ribbony, SEO, sosyal medya yönetimi, reklam yönetimi ve içerik üretimi alanlarında veriye dayalı stratejilerle markanızın dijital varlığını güçlendiren kurumsal dijital pazarlama ajansıdır.'
-        : "Ribbony is a corporate digital marketing agency that strengthens your brand's digital presence through data-driven strategies in SEO, social media management, ad management, and content creation.",
+        ? 'Ribbony, SEO, sosyal medya yönetimi, reklam yönetimi ve içerik üretimi alanlarında veriye dayalı stratejilerle markanızın dijital varlığını güçlendiren kurumsal dijital pazarlama şirketidir.'
+        : "Ribbony is a corporate digital marketing company that strengthens your brand's digital presence through data-driven strategies in SEO, social media management, ad management, and content creation.",
     keywords:
       locale === 'tr'
         ? [
-            'dijital pazarlama ajansı',
-            'SEO ajansı İstanbul',
+            'dijital pazarlama şirketi',
+            'SEO şirketi İstanbul',
             'sosyal medya yönetimi',
-            'Google Ads ajansı',
+            'Google Ads şirketi',
             'Meta Ads yönetimi',
-            'içerik üretimi ajansı',
+            'içerik üretimi şirketi',
             'web tasarım İstanbul',
           ]
         : [
-            'digital marketing agency',
-            'SEO agency Istanbul',
+            'digital marketing company',
+            'SEO company Istanbul',
             'social media management',
-            'Google Ads agency',
+            'Google Ads company',
             'Meta Ads management',
-            'content creation agency',
+            'content creation company',
           ],
   });
 }
@@ -142,12 +142,12 @@ export function getAboutMetadata(locale: Locale): Metadata {
     title: locale === 'tr' ? 'Hakkımızda' : 'About Us',
     description:
       locale === 'tr'
-        ? "Ribbony hakkında: 2021'den bu yana İstanbul merkezli faaliyet gösteren dijital pazarlama ajansı olarak 50+ markayı dijital dönüşüm yolculuğunda destekliyoruz."
-        : 'About Ribbony: operating from Istanbul since 2021, we support 50+ brands on their digital transformation journey as a digital marketing agency.',
+        ? "Ribbony hakkında: 2021'den bu yana İstanbul merkezli faaliyet gösteren dijital pazarlama şirketi olarak 50+ markayı dijital dönüşüm yolculuğunda destekliyoruz."
+        : 'About Ribbony: operating from Istanbul since 2021, we support 50+ brands on their digital transformation journey as a digital marketing company.',
     keywords:
       locale === 'tr'
-        ? ['Ribbony hakkında', 'dijital pazarlama ekibi', 'İstanbul dijital ajans']
-        : ['about Ribbony', 'digital marketing team', 'Istanbul digital agency'],
+        ? ['Ribbony hakkında', 'dijital pazarlama ekibi', 'İstanbul dijital şirket']
+        : ['about Ribbony', 'digital marketing team', 'Istanbul digital company'],
   });
 }
 
@@ -206,8 +206,8 @@ export function getContactMetadata(locale: Locale): Metadata {
         : 'Get in touch with Ribbony. Request a free consultation for digital marketing, SEO, social media, or ad management.',
     keywords:
       locale === 'tr'
-        ? ['Ribbony iletişim', 'dijital pazarlama danışmanlık', 'teklif al', 'İstanbul dijital ajans iletişim']
-        : ['Ribbony contact', 'digital marketing consultation', 'get a quote', 'Istanbul digital agency contact'],
+        ? ['Ribbony iletişim', 'dijital pazarlama danışmanlık', 'teklif al', 'İstanbul dijital şirket iletişim']
+        : ['Ribbony contact', 'digital marketing consultation', 'get a quote', 'Istanbul digital company contact'],
   });
 }
 
@@ -242,27 +242,24 @@ export function organizationSchema() {
     name: 'Ribbony',
     url: siteUrl,
     logo: `${siteUrl}/images/ribbony-logo.png`,
-    description: 'Kurumsal dijital pazarlama ajansı — SEO, sosyal medya, reklam yönetimi ve içerik üretimi.',
+    description: 'Kurumsal dijital pazarlama şirketi — SEO, sosyal medya, reklam yönetimi ve içerik üretimi.',
     foundingDate: '2021',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Büyükdere Caddesi No:1',
-      addressLocality: 'Şişli',
-      addressRegion: 'İstanbul',
-      postalCode: '34394',
+      addressLocality: 'Ankara / İstanbul',
       addressCountry: 'TR',
     },
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+90-212-000-0000',
-      email: 'info@ribbony.com',
+      telephone: '+90-551-101-42-88',
+      email: 'info@ribbonydigital.com',
       contactType: 'customer service',
       availableLanguage: ['Turkish', 'English'],
     },
     sameAs: [
-      'https://www.instagram.com/ribbony',
-      'https://www.linkedin.com/company/ribbony',
-      'https://twitter.com/ribbony',
+      'https://www.instagram.com/ribbonydigital',
+      'https://www.linkedin.com/company/ribbonydigital',
+      'https://twitter.com/ribbonydigital',
     ],
   };
 }
@@ -275,18 +272,15 @@ export function localBusinessSchema(locale: Locale) {
     name: 'Ribbony',
     image: `${siteUrl}/images/ribbony-logo.png`,
     url: siteUrl,
-    telephone: '+90-212-000-0000',
-    email: 'info@ribbony.com',
+    telephone: '+90-551-101-42-88',
+    email: 'info@ribbonydigital.com',
     description:
       locale === 'tr'
-        ? 'Kurumsal dijital pazarlama ajansı — SEO, sosyal medya, reklam yönetimi ve içerik üretimi.'
-        : 'Corporate digital marketing agency — SEO, social media, ad management, and content creation.',
+        ? 'Kurumsal dijital pazarlama şirketi — SEO, sosyal medya, reklam yönetimi ve içerik üretimi.'
+        : 'Corporate digital marketing company — SEO, social media, ad management, and content creation.',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Büyükdere Caddesi No:1',
-      addressLocality: 'Şişli',
-      addressRegion: 'İstanbul',
-      postalCode: '34394',
+      addressLocality: 'Ankara / İstanbul',
       addressCountry: 'TR',
     },
     geo: {

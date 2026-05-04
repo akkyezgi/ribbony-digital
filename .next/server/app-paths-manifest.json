@@ -1,6 +1,3 @@
 {
-  "/[locale]/page": "app/[locale]/page.js",
-  "/[locale]/referanslar/page": "app/[locale]/referanslar/page.js",
-  "/[locale]/hizmetler/[slug]/page": "app/[locale]/hizmetler/[slug]/page.js",
-  "/[locale]/iletisim/page": "app/[locale]/iletisim/page.js"
+  "/[locale]/page": "app/[locale]/page.js"
 }

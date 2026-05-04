@@ -5,6 +5,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import SectionTitle from '@/components/ui/SectionTitle';
 import CounterUp from '@/components/ui/CounterUp';
 import Button from '@/components/ui/Button';
+import { useContactPopup } from '@/lib/contact-popup-context';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -44,6 +45,7 @@ export default function AboutSection() {
   const t = useTranslations('about');
   const locale = useLocale() as 'tr' | 'en';
   const prefix = locale === 'en' ? '/en' : '';
+  const { openPopup } = useContactPopup();
 
   const counters = COUNTERS.map((c, i) => ({
     ...c,
@@ -284,7 +286,7 @@ export default function AboutSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
-              <Button href={`${prefix}/iletisim`} variant="filled" size="lg">
+              <Button onClick={openPopup} variant="filled" size="lg">
                 {locale === 'tr' ? 'Teklif Al' : 'Get a Quote'}
               </Button>
               <Button href={`${prefix}/hizmetler`} variant="ghost" size="lg">

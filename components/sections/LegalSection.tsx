@@ -39,7 +39,7 @@ const CONTENT: Record<LegalType, Record<Locale, LegalContent>> = {
           id: 'veri-sorumlusu',
           title: '1. Veri Sorumlusunun Kimliği',
           body: [
-            'Veri sorumlusu sıfatıyla Ribbony Dijital Pazarlama, Büyükdere Caddesi No:1, Levent, Şişli, İstanbul adresinde faaliyet göstermektedir. İletişim: info@ribbony.com | +90 (212) 000 00 00.',
+            'Veri sorumlusu sıfatıyla Ribbony Dijital Pazarlama, Ankara / İstanbul adreslerinde faaliyet göstermektedir. İletişim: info@ribbonydigital.com | +90 551 101 42 88.',
           ],
         },
         {
@@ -115,7 +115,7 @@ const CONTENT: Record<LegalType, Record<Locale, LegalContent>> = {
           id: 'basvuru',
           title: '7. Başvuru Yöntemi',
           body: [
-            'Haklarınızı kullanmak için info@ribbony.com adresine e-posta göndererek veya Büyükdere Caddesi No:1, Şişli, İstanbul adresine yazılı başvuruda bulunarak Şirketimize iletebilirsiniz. Başvurularınız, kimliğinizin doğrulanmasının ardından KVKK\'nın 13. maddesi gereğince en geç otuz (30) gün içinde yanıtlanacaktır.',
+            'Haklarınızı kullanmak için info@ribbonydigital.com adresine e-posta göndererek Şirketimize iletebilirsiniz. Başvurularınız, kimliğinizin doğrulanmasının ardından KVKK\'nın 13. maddesi gereğince en geç otuz (30) gün içinde yanıtlanacaktır.',
           ],
         },
       ],
@@ -130,7 +130,7 @@ const CONTENT: Record<LegalType, Record<Locale, LegalContent>> = {
           id: 'data-controller',
           title: '1. Identity of the Data Controller',
           body: [
-            'As the data controller, Ribbony Digital Marketing operates at Büyükdere Caddesi No:1, Levent, Sisli, Istanbul, Turkey. Contact: info@ribbony.com | +90 (212) 000 00 00.',
+            'As the data controller, Ribbony Digital Marketing operates in Ankara / Istanbul, Turkey. Contact: info@ribbonydigital.com | +90 551 101 42 88.',
           ],
         },
         {
@@ -204,7 +204,7 @@ const CONTENT: Record<LegalType, Record<Locale, LegalContent>> = {
           id: 'application',
           title: '7. How to Apply',
           body: [
-            'To exercise your rights, you may contact us by email at info@ribbony.com or by written application to Büyükdere Caddesi No:1, Sisli, Istanbul. Your applications will be responded to within thirty (30) days at the latest following verification of your identity, in accordance with Article 13 of KVKK.',
+            'To exercise your rights, you may contact us by email at info@ribbonydigital.com. Your applications will be responded to within thirty (30) days at the latest following verification of your identity, in accordance with Article 13 of KVKK.',
           ],
         },
       ],
@@ -272,7 +272,7 @@ const CONTENT: Record<LegalType, Record<Locale, LegalContent>> = {
           title: '5. Veri Güvenliği',
           body: [
             'Kişisel verilerinizi yetkisiz erişim, değiştirme, ifşa etme veya imhaya karşı korumak için endüstri standardı teknik ve idari tedbirler uygulamaktayız. Web sitemiz SSL/TLS şifreleme protokolü ile güvence altına alınmıştır.',
-            'Bununla birlikte, internet üzerinden hiçbir veri aktarımının veya depolama yönteminin %100 güvenli olduğunu garanti edemeyiz. Herhangi bir güvenlik ihlali tespit etmeniz halinde lütfen info@ribbony.com adresine bildirin.',
+            'Bununla birlikte, internet üzerinden hiçbir veri aktarımının veya depolama yönteminin %100 güvenli olduğunu garanti edemeyiz. Herhangi bir güvenlik ihlali tespit etmeniz halinde lütfen info@ribbonydigital.com adresine bildirin.',
           ],
         },
         {
@@ -300,7 +300,7 @@ const CONTENT: Record<LegalType, Record<Locale, LegalContent>> = {
           id: 'iletisim',
           title: '9. İletişim',
           body: [
-            'Gizlilik uygulamalarımıza ilişkin sorularınız için info@ribbony.com adresinden veya +90 (212) 000 00 00 numaralı telefondan bizimle iletişime geçebilirsiniz.',
+            'Gizlilik uygulamalarımıza ilişkin sorularınız için info@ribbonydigital.com adresinden veya +90 551 101 42 88 numaralı telefondan bizimle iletişime geçebilirsiniz.',
           ],
         },
       ],
@@ -363,7 +363,7 @@ const CONTENT: Record<LegalType, Record<Locale, LegalContent>> = {
           title: '5. Data Security',
           body: [
             'We implement industry-standard technical and administrative measures to protect your personal data against unauthorized access, modification, disclosure, or destruction. Our website is secured with SSL/TLS encryption.',
-            'However, we cannot guarantee that any data transmission over the internet or storage method is 100% secure. If you detect any security breach, please report it to info@ribbony.com.',
+            'However, we cannot guarantee that any data transmission over the internet or storage method is 100% secure. If you detect any security breach, please report it to info@ribbonydigital.com.',
           ],
         },
         {
@@ -391,7 +391,7 @@ const CONTENT: Record<LegalType, Record<Locale, LegalContent>> = {
           id: 'contact',
           title: '9. Contact',
           body: [
-            'For questions about our privacy practices, you can reach us at info@ribbony.com or by phone at +90 (212) 000 00 00.',
+            'For questions about our privacy practices, you can reach us at info@ribbonydigital.com or by phone at +90 551 101 42 88.',
           ],
         },
       ],
@@ -484,7 +484,7 @@ const CONTENT: Record<LegalType, Record<Locale, LegalContent>> = {
           id: 'iletisim',
           title: '8. İletisim',
           body: [
-            'Cerez politikamiza iliskin sorulariniz icin info@ribbony.com adresinden veya +90 (212) 000 00 00 numarasini arayarak bizimle iletisime gecebilirsiniz.',
+            'Cerez politikamiza iliskin sorulariniz icin info@ribbonydigital.com adresinden veya +90 551 101 42 88 numarasini arayarak bizimle iletisime gecebilirsiniz.',
           ],
         },
       ],
@@ -572,7 +572,7 @@ const CONTENT: Record<LegalType, Record<Locale, LegalContent>> = {
           id: 'contact',
           title: '8. Contact',
           body: [
-            'For questions about our cookie policy, you can reach us at info@ribbony.com or by calling +90 (212) 000 00 00.',
+            'For questions about our cookie policy, you can reach us at info@ribbonydigital.com or by calling +90 551 101 42 88.',
           ],
         },
       ],
@@ -698,10 +698,10 @@ export default function LegalSection({ type }: Props) {
               ? 'Bu belge hakkında sorularınız için '
               : 'For questions about this document, please contact us at '}
             <a
-              href="mailto:info@ribbony.com"
+              href="mailto:info@ribbonydigital.com"
               className="text-[#e13e90] hover:underline font-medium"
             >
-              info@ribbony.com
+              info@ribbonydigital.com
             </a>
             {locale === 'tr' ? ' adresine yazabilirsiniz.' : '.'}
           </p>

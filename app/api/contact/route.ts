@@ -14,7 +14,7 @@ const contactSchema = z.object({
     ),
   company: z.string().optional(),
   service: z.string().min(1, 'Lütfen bir hizmet seçiniz'),
-  message: z.string().min(10, 'Mesajınız en az 10 karakter olmalıdır'),
+  message: z.string().optional(),
 });
 
 type ContactPayload = z.infer<typeof contactSchema>;
@@ -63,6 +63,7 @@ function buildEmailHtml(data: ContactPayload): string {
                 ${buildRow('İlgilenilen Hizmet', data.service)}
               </table>
 
+              ${data.message ? `
               <!-- Message -->
               <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:24px;">
                 <tr>
@@ -73,7 +74,7 @@ function buildEmailHtml(data: ContactPayload): string {
                     <p style="margin:0;font-size:15px;color:#3d3d3d;line-height:1.7;white-space:pre-wrap;">${escapeHtml(data.message)}</p>
                   </td>
                 </tr>
-              </table>
+              </table>` : ''}
 
               <!-- CTA -->
               <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:32px;">

@@ -55,7 +55,7 @@ export default function Button({
   onClick,
   external = false,
 }: ButtonProps) {
-  const base = `inline-flex items-center justify-center gap-2 rounded-full font-body font-bold transition-colors duration-200 ${sizes[size]} ${variants[variant]} ${className}`;
+  const base = `inline-flex items-center justify-center gap-2 rounded-full font-body font-bold transition-all duration-300 [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] ${sizes[size]} ${variants[variant]} ${className}`;
 
   if (href) {
     if (external) {

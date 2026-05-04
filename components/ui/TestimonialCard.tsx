@@ -18,8 +18,8 @@ function StarRow({ featured }: { featured: boolean }) {
         <svg
           key={i}
           xmlns="http://www.w3.org/2000/svg"
-          width="14"
-          height="14"
+          width="24"
+          height="24"
           viewBox="0 0 24 24"
           fill={featured ? 'rgba(255,255,255,0.9)' : '#e13e90'}
         >
@@ -39,7 +39,7 @@ function Avatar({ name, featured }: { name: string; featured: boolean }) {
 
   return (
     <div
-      className={`w-10 h-10 rounded-full flex items-center justify-center font-heading font-bold text-sm flex-shrink-0 ${
+      className={`w-16 h-16 rounded-full flex items-center justify-center font-heading font-bold text-lg flex-shrink-0 ${
         featured ? 'bg-white/20 text-white' : 'bg-[#fce8f3] text-[#e13e90]'
       }`}
     >
@@ -63,16 +63,16 @@ export default function TestimonialCard({
       viewport={{ once: true, margin: '-60px' }}
       transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: index * 0.1 }}
       whileHover={{ y: -6 }}
-      className={`rounded-[20px] p-8 flex flex-col gap-6 transition-shadow duration-300 ${
+      className={`rounded-[20px] p-10 flex flex-col gap-6 min-h-[320px] transition-shadow duration-300 ${
         featured
           ? 'bg-[#e13e90] text-white shadow-[0_20px_60px_rgba(225,62,144,0.35)]'
-          : 'bg-white border border-[#ebebeb] hover:shadow-md hover:border-[#e13e90]/30'
+          : 'bg-white'
       }`}
     >
       <StarRow featured={featured} />
 
       <blockquote
-        className={`font-body text-base leading-relaxed flex-1 ${
+        className={`font-body text-lg leading-relaxed flex-1 ${
           featured ? 'text-white/90' : 'text-[#3d3d3d]'
         }`}
       >
@@ -83,7 +83,7 @@ export default function TestimonialCard({
         <Avatar name={name} featured={featured} />
         <div>
           <p
-            className={`font-body font-bold text-sm ${
+            className={`font-body font-bold text-xl ${
               featured ? 'text-white' : 'text-[#0f0f0f]'
             }`}
           >

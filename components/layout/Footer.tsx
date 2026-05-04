@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
 import { services } from '@/lib/services';
+import { useContactPopup } from '@/lib/contact-popup-context';
 
 function InstagramIcon() {
   return (
@@ -35,9 +36,9 @@ function XIcon() {
 }
 
 const socialLinks = [
-  { href: 'https://www.instagram.com/ribbony', label: 'Instagram', Icon: InstagramIcon },
-  { href: 'https://www.linkedin.com/company/ribbony', label: 'LinkedIn', Icon: LinkedInIcon },
-  { href: 'https://twitter.com/ribbony', label: 'X (Twitter)', Icon: XIcon },
+  { href: 'https://www.instagram.com/ribbonydigital', label: 'Instagram', Icon: InstagramIcon },
+  { href: 'https://www.linkedin.com/company/ribbonydigital', label: 'LinkedIn', Icon: LinkedInIcon },
+  { href: 'https://twitter.com/ribbonydigital', label: 'X (Twitter)', Icon: XIcon },
 ];
 
 const fadeUp = (i: number) => ({
@@ -51,6 +52,7 @@ export default function Footer() {
   const t = useTranslations('footer');
   const locale = useLocale() as 'tr' | 'en';
   const prefix = locale === 'en' ? '/en' : '';
+  const { openPopup } = useContactPopup();
 
   const serviceLinks = services.map((s) => ({
     href: `${prefix}/hizmetler/${s.slug}`,
@@ -71,7 +73,8 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-[#f5f5f5] border-t border-[#ebebeb]">
+    <footer className="bg-[#f5f5f5] border-t border-[#ebebeb] relative">
+      <div className="absolute top-0 inset-x-0 h-[3px] bg-gradient-to-r from-[#e13e90] via-[#f472b6] to-[#b8306f]" />
 
       {/* ─── Main grid ─── */}
       <div className="max-w-[1280px] mx-auto px-6 py-16 md:py-20">
@@ -81,11 +84,11 @@ export default function Footer() {
           <motion.div {...fadeUp(0)} className="flex flex-col gap-5">
             <Link href={prefix || '/'} aria-label="Ribbony Ana Sayfa">
               <Image
-                src="/images/ribbony-logo.png"
+                src="/images/ribbony-web-logo.png"
                 alt="Ribbony"
-                width={130}
-                height={38}
-                className="h-8 w-auto"
+                width={200}
+                height={60}
+                className="h-12 w-auto"
               />
             </Link>
 
@@ -110,6 +113,14 @@ export default function Footer() {
                 </a>
               ))}
             </div>
+
+            <button
+              onClick={openPopup}
+              className="self-start font-body font-bold text-sm text-white bg-[#e13e90]
+                         rounded-full px-6 py-2.5 hover:bg-[#b8306f] transition-colors duration-200"
+            >
+              {locale === 'tr' ? 'Teklif Al' : 'Get a Quote'}
+            </button>
           </motion.div>
 
           {/* Col 2: Hizmetler */}

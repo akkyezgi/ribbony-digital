@@ -4,7 +4,8 @@ export type ServiceSlug =
   | 'web-tasarim'
   | 'seo'
   | 'reklam-yonetimi'
-  | 'icerik-uretimi';
+  | 'icerik-uretimi'
+  | 'yapay-zeka-optimizasyonu';
 
 export interface ProcessStep {
   number: string;
@@ -1230,6 +1231,200 @@ export const services: ServiceData[] = [
           question: 'Can you write about technical and niche topics?',
           answer:
             'Yes. Our team includes experienced specialist writers in many niche industries including fintech, law, healthcare, software, e-commerce, and manufacturing. We also use an industry expert interview approach when needed.',
+        },
+      ],
+    },
+  },
+  {
+    slug: 'yapay-zeka-optimizasyonu',
+    icon: '🤖',
+    tr: {
+      title: 'Yapay Zeka Optimizasyonu',
+      slogan: 'Yapay Zeka ile Markanızı Geleceğe Taşıyın',
+      heroDescription:
+        "ChatGPT, Gemini ve diğer yapay zeka araçlarını iş akışlarınıza entegre ederek içerik üretimini hızlandırıyor, süreçleri otomatize ediyor ve veri analizini akıllandırıyoruz.",
+      metaDescription:
+        "Yapay zeka optimizasyonu hizmetleriyle iş süreçlerinizi dönüştürün. Ribbony ile AI destekli içerik üretimi, otomasyon ve veri analitiği çözümleri.",
+      keywords: [
+        'yapay zeka optimizasyonu',
+        'AI pazarlama',
+        'ChatGPT içerik üretimi',
+        'yapay zeka otomasyon',
+        'AI SEO',
+        'dijital pazarlama AI',
+      ],
+      process: [
+        {
+          number: '01',
+          title: 'Yapay Zeka Denetimi',
+          description:
+            "Mevcut iş süreçlerinizi, içerik üretim döngülerinizi ve veri akışlarınızı inceleyerek yapay zekanın en yüksek değer yaratacağı noktaları tespit ediyoruz.",
+        },
+        {
+          number: '02',
+          title: 'Araç Seçimi & Entegrasyon',
+          description:
+            "Hedeflerinize ve bütçenize en uygun AI araçlarını belirliyor, mevcut araçlarınız ve platformlarınızla sorunsuz entegrasyon sağlıyoruz.",
+        },
+        {
+          number: '03',
+          title: 'Otomasyon Kurulumu',
+          description:
+            "Tekrarlayan içerik üretimi, sosyal medya planlaması, raporlama ve müşteri iletişimi süreçleri için özel AI iş akışları ve otomasyon senaryoları kuruyoruz.",
+        },
+        {
+          number: '04',
+          title: 'İçerik & Performans Optimizasyonu',
+          description:
+            "AI üretilen içerikleri marka sesinizle uyumlu hale getiriyor, SEO performansını artırıyor ve A/B testleriyle en yüksek dönüşüm oranlarına ulaşıyoruz.",
+        },
+        {
+          number: '05',
+          title: 'Ölçüm & Sürekli İyileştirme',
+          description:
+            "AI çözümlerinin iş hedeflerinize katkısını ölçüyor, modelleri düzenli olarak güncelliyor ve ortaya çıkan yeni AI fırsatlarını değerlendiriyoruz.",
+        },
+      ],
+      advantages: [
+        {
+          icon: '⚡',
+          title: 'Zaman Tasarrufu',
+          description:
+            "İçerik üretimi, raporlama ve müşteri yanıtları gibi tekrarlayan görevleri otomatize ederek ekibinizin stratejik çalışmalara odaklanmasını sağlarız.",
+        },
+        {
+          icon: '💰',
+          title: 'Maliyet Optimizasyonu',
+          description:
+            "Doğru AI araçlarıyla operasyonel maliyetleri %30-60 oranında düşürürken üretim kalitesini ve hızını artırırız.",
+        },
+        {
+          icon: '📊',
+          title: 'Veri Odaklı İçerik',
+          description:
+            "AI destekli analiz ve kişiselleştirme ile her içerik parçasını hedef kitlenizin ihtiyaç ve davranışlarına göre optimize ederiz.",
+        },
+      ],
+      faq: [
+        {
+          question: "Yapay zeka içerikleri özgün ve SEO uyumlu olur mu?",
+          answer:
+            "Evet. AI üretilen tüm içerikler editör ekibimiz tarafından gözden geçirilir, marka sesinizle uyumlu hale getirilir ve plagiarism kontrolünden geçirilir. SEO optimizasyonu da dahildir.",
+        },
+        {
+          question: "Hangi AI araçlarını kullanıyorsunuz?",
+          answer:
+            "OpenAI (GPT-4o), Google Gemini, Claude, Midjourney, Runway ve sektöre özel araçlarla çalışıyoruz. Hedeflerinize ve iş akışlarınıza en uygun kombinasyonu belirliyoruz.",
+        },
+        {
+          question: "Ekibimizi AI kullanımı konusunda eğitiyor musunuz?",
+          answer:
+            "Evet. Kurulan çözümleri ekibinizin verimli kullanabilmesi için özelleştirilmiş eğitimler ve kullanım kılavuzları hazırlıyoruz.",
+        },
+        {
+          question: "AI çözümleri mevcut araçlarımızla entegre olabilir mi?",
+          answer:
+            "Büyük olasılıkla evet. Google Workspace, HubSpot, Notion, Slack ve çoğu CRM platformuyla entegrasyon desteği sunuyoruz. Özel entegrasyon gerektiren durumlarda API bağlantıları geliştiriyoruz.",
+        },
+        {
+          question: "Yapay zeka optimizasyonu hangi sektörlere uygun?",
+          answer:
+            "E-ticaret, hizmet sektörü, fintech, sağlık, eğitim ve içerik odaklı her işletme AI optimizasyonundan yararlanabilir. İş modelinizi değerlendirip size en uygun çözümü sunuyoruz.",
+        },
+      ],
+    },
+    en: {
+      title: 'AI Optimization',
+      slogan: 'Take Your Brand to the Future with Artificial Intelligence',
+      heroDescription:
+        "We integrate ChatGPT, Gemini, and other AI tools into your workflows to accelerate content production, automate processes, and enhance data analysis.",
+      metaDescription:
+        "Transform your business processes with AI optimization services. AI-powered content creation, automation, and data analytics solutions with Ribbony.",
+      keywords: [
+        'AI optimization',
+        'AI marketing',
+        'ChatGPT content creation',
+        'AI automation',
+        'AI SEO',
+        'digital marketing AI',
+      ],
+      process: [
+        {
+          number: '01',
+          title: 'AI Audit',
+          description:
+            "We examine your existing business processes, content production cycles, and data flows to identify where AI can create the highest value.",
+        },
+        {
+          number: '02',
+          title: 'Tool Selection & Integration',
+          description:
+            "We identify the most suitable AI tools for your goals and budget, then ensure seamless integration with your existing tools and platforms.",
+        },
+        {
+          number: '03',
+          title: 'Automation Setup',
+          description:
+            "We build custom AI workflows and automation scenarios for repetitive content production, social media scheduling, reporting, and customer communication.",
+        },
+        {
+          number: '04',
+          title: 'Content & Performance Optimization',
+          description:
+            "We align AI-generated content with your brand voice, boost SEO performance, and reach the highest conversion rates through A/B testing.",
+        },
+        {
+          number: '05',
+          title: 'Measurement & Continuous Improvement',
+          description:
+            "We measure how AI solutions contribute to your business goals, regularly update models, and capitalize on emerging AI opportunities.",
+        },
+      ],
+      advantages: [
+        {
+          icon: '⚡',
+          title: 'Time Savings',
+          description:
+            "By automating repetitive tasks like content creation, reporting, and customer responses, we free your team to focus on strategic work.",
+        },
+        {
+          icon: '💰',
+          title: 'Cost Optimization',
+          description:
+            "With the right AI tools, we reduce operational costs by 30–60% while improving production quality and speed.",
+        },
+        {
+          icon: '📊',
+          title: 'Data-Driven Content',
+          description:
+            "Through AI-powered analysis and personalization, we optimize every piece of content based on your target audience's needs and behaviors.",
+        },
+      ],
+      faq: [
+        {
+          question: "Is AI-generated content original and SEO-friendly?",
+          answer:
+            "Yes. All AI-generated content is reviewed by our editorial team, aligned with your brand voice, and checked for plagiarism. SEO optimization is also included.",
+        },
+        {
+          question: "Which AI tools do you use?",
+          answer:
+            "We work with OpenAI (GPT-4o), Google Gemini, Claude, Midjourney, Runway, and industry-specific tools. We identify the best combination for your goals and workflows.",
+        },
+        {
+          question: "Do you train our team on AI usage?",
+          answer:
+            "Yes. We prepare customized training sessions and user guides so your team can use the implemented solutions effectively.",
+        },
+        {
+          question: "Can AI solutions integrate with our existing tools?",
+          answer:
+            "Most likely yes. We offer integration support for Google Workspace, HubSpot, Notion, Slack, and most CRM platforms. For custom integration needs, we develop API connections.",
+        },
+        {
+          question: "Which industries benefit from AI optimization?",
+          answer:
+            "E-commerce, service industries, fintech, healthcare, education, and any content-driven business can benefit from AI optimization. We evaluate your business model and provide the most suitable solution.",
         },
       ],
     },

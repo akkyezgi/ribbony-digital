@@ -6,6 +6,7 @@ import Link from 'next/link';
 import ServiceCard from '@/components/ui/ServiceCard';
 import Button from '@/components/ui/Button';
 import { services } from '@/lib/services';
+import { useContactPopup } from '@/lib/contact-popup-context';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -27,6 +28,7 @@ export default function ServicesListingSection() {
   const tHero = useTranslations('hero');
   const locale = useLocale() as 'tr' | 'en';
   const prefix = locale === 'en' ? '/en' : '';
+  const { openPopup } = useContactPopup();
   const statLabels =
     locale === 'tr'
       ? ['Mutlu Müşteri', 'Tamamlanan Proje', 'Hizmet Kategorisi']
@@ -146,8 +148,8 @@ export default function ServicesListingSection() {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
-              <Button href={`${prefix}/iletisim`} variant="filled" size="lg">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 flex-shrink-0">
+              <Button onClick={openPopup} variant="filled" size="lg">
                 {locale === 'tr' ? 'Teklif Al' : 'Get a Quote'}
               </Button>
               <Button href={`${prefix}/iletisim`} variant="ghost" size="lg">

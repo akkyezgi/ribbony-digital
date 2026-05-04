@@ -44,17 +44,22 @@ export default function SectionTitle({
         </motion.span>
       )}
 
-      <motion.h2
+      <motion.div
         custom={eyebrow ? 1 : 0}
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: '-60px' }}
-        className="font-heading font-extrabold text-[#0f0f0f] tracking-tight"
-        style={{ fontSize: 'clamp(34px, 4vw, 56px)', lineHeight: 1.15 }}
+        className="inline-block"
       >
-        {title}
-      </motion.h2>
+        <h2
+          className="font-heading font-extrabold text-[#0f0f0f] tracking-tight"
+          style={{ fontSize: 'clamp(34px, 4vw, 56px)', lineHeight: 1.15 }}
+        >
+          {title}
+        </h2>
+        <div className="mt-2 h-[3px] rounded-full bg-gradient-to-r from-[#e13e90] to-[#b8306f]" />
+      </motion.div>
 
       {description && (
         <motion.p

@@ -10,6 +10,9 @@ import Footer from '@/components/layout/Footer';
 import CookieBanner from '@/components/ui/CookieBanner';
 import MetaPixel from '@/components/ui/MetaPixel';
 import AnalyticsProvider from '@/components/ui/AnalyticsProvider';
+import { ContactPopupProvider } from '@/lib/contact-popup-context';
+import ContactPopup from '@/components/ui/ContactPopup';
+import FloatingCta from '@/components/ui/FloatingCta';
 import '@/app/globals.css';
 import { setRequestLocale } from 'next-intl/server';
 
@@ -37,12 +40,16 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://ribbony.com'),
   title: {
     template: '%s | Ribbony',
-    default: 'Ribbony — Dijital Pazarlama Ajansı',
+    default: 'Ribbony — Dijital Pazarlama Şirketi',
   },
   authors: [{ name: 'Ribbony', url: 'https://ribbony.com' }],
   creator: 'Ribbony',
   publisher: 'Ribbony',
   formatDetection: { telephone: false },
+  icons: {
+    icon: '/images/ribbony-logo-ikon.png',
+    apple: '/images/ribbony-logo-ikon.png',
+  },
 };
 
 // ─── Static params ────────────────────────────────────────────────────────────
@@ -72,30 +79,35 @@ export default async function LocaleLayout({ children, params: { locale } }: Loc
     >
       <body className="bg-white text-[#3d3d3d] antialiased">
         <NextIntlClientProvider messages={messages}>
+          <ContactPopupProvider>
 
-          {/* Skip-to-content link for keyboard accessibility */}
-          <a
-            href="#main-content"
-            className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100]
-                       focus:bg-[#e13e90] focus:text-white focus:px-4 focus:py-2 focus:rounded-full
-                       focus:font-body focus:font-medium focus:text-sm"
-          >
-            İçeriğe geç
-          </a>
+            {/* Skip-to-content link for keyboard accessibility */}
+            <a
+              href="#main-content"
+              className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100]
+                         focus:bg-[#e13e90] focus:text-white focus:px-4 focus:py-2 focus:rounded-full
+                         focus:font-body focus:font-medium focus:text-sm"
+            >
+              İçeriğe geç
+            </a>
 
-          <Navbar />
+            <Navbar />
 
-          <main id="main-content">
-            {children}
-          </main>
+            <main id="main-content">
+              {children}
+            </main>
 
-          <Footer />
+            <Footer />
 
-          {/* Analytics & tracking — load conditionally after consent */}
-          <CookieBanner />
-          <MetaPixel />
-          <AnalyticsProvider />
+            <ContactPopup />
+            <FloatingCta />
 
+            {/* Analytics & tracking — load conditionally after consent */}
+            <CookieBanner />
+            <MetaPixel />
+            <AnalyticsProvider />
+
+          </ContactPopupProvider>
         </NextIntlClientProvider>
       </body>
     </html>

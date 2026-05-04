@@ -28,9 +28,10 @@ export default function ServiceCard({
       viewport={{ once: true, margin: '-60px' }}
       transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: index * 0.07 }}
       whileHover={{ y: -6 }}
-      className="group bg-white border border-[#ebebeb] rounded-[20px] p-7 flex flex-col gap-5
-                 transition-shadow duration-300 hover:shadow-md hover:border-[#e13e90]/30"
+      className="group p-[1px] rounded-[21px] bg-[#ebebeb] hover:bg-gradient-to-br
+                 hover:from-[#e13e90] hover:to-[#b8306f] transition-all duration-300 hover:shadow-md"
     >
+    <div className="bg-white rounded-[20px] p-7 flex flex-col gap-5 h-full">
       <div className="w-12 h-12 rounded-[14px] bg-[#fce8f3] flex items-center justify-center text-2xl flex-shrink-0">
         {icon}
       </div>
@@ -62,6 +63,7 @@ export default function ServiceCard({
           <path d="M5 12h14M12 5l7 7-7 7" />
         </motion.svg>
       </Link>
+    </div>
     </motion.div>
   );
 }

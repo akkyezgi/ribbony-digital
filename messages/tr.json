@@ -16,17 +16,14 @@
     }
   },
   "hero": {
-    "badge": "Dijital Dönüşümün Adresi",
+    "badge": "Dijitaldeki Teknoloji ve Büyüme Partneriniz",
     "title": "Markanızı Dijitalde Zirveye Taşıyoruz",
     "description": "SEO, sosyal medya, reklam yönetimi ve içerik üretimi alanlarında veriye dayalı stratejilerle markanızın dijital varlığını güçlendiriyoruz.",
     "ctaPrimary": "Ücretsiz Analiz Al",
     "ctaSecondary": "Hizmetleri İncele",
-    "stat1Value": "50+",
-    "stat1Label": "Mutlu Müşteri",
-    "stat2Value": "120+",
-    "stat2Label": "Tamamlanan Proje",
-    "stat3Value": "%98",
-    "stat3Label": "Memnuniyet",
+    "feature1": "Veri Odaklı Strateji",
+    "feature2": "Şeffaf Raporlama",
+    "feature3": "Ölçülebilir Sonuçlar",
     "cardTitle": "Kampanya Performansı",
     "cardSocial": "Sosyal Medya",
     "cardAds": "Reklam Yönetimi",
@@ -79,6 +76,10 @@
       "icerik-uretimi": {
         "title": "İçerik Üretimi",
         "description": "SEO uyumlu blog yazıları, sosyal medya içerikleri ve görsel tasarımlarla markanızın sesini güçlendiririz."
+      },
+      "yapay-zeka-optimizasyonu": {
+        "title": "Yapay Zeka Optimizasyonu",
+        "description": "İş süreçlerinizi AI araçlarıyla otomatize eder, içerik üretimini hızlandırır ve veri analizini akıllandırarak rekabet üstünlüğü yaratırız."
       }
     }
   },
@@ -164,9 +165,9 @@
     "privacyLink": "Gizlilik Politikası",
     "cookiesLink": "Çerez Politikası",
     "copyright": "© {year} Ribbony. Tüm hakları saklıdır.",
-    "address": "Levent, İstanbul, Türkiye",
-    "phone": "+90 (212) 000 00 00",
-    "email": "info@ribbony.com"
+    "address": "Ankara | İstanbul",
+    "phone": "+90 551 101 42 88",
+    "email": "info@ribbonydigital.com"
   },
   "contact": {
     "pageTitle": "İletişim",
@@ -174,11 +175,11 @@
     "heroDescription": "Projenizi konuşmak için formu doldurun. Uzman ekibimiz 24 saat içinde sizinle iletişime geçecektir.",
     "infoTitle": "İletişim Bilgileri",
     "addressLabel": "Adres",
-    "address": "Levent Mahallesi, Büyükdere Cad. No:1\nŞişli, İstanbul 34394",
+    "address": "Ankara | İstanbul",
     "phoneLabel": "Telefon",
-    "phone": "+90 (212) 000 00 00",
+    "phone": "+90 551 101 42 88",
     "emailLabel": "E-posta",
-    "email": "info@ribbony.com",
+    "email": "info@ribbonydigital.com",
     "hoursLabel": "Çalışma Saatleri",
     "hours": "Pazartesi – Cuma: 09:00 – 18:00",
     "form": {
@@ -227,7 +228,7 @@
     "heroDescription": "2021 yılından bu yana İstanbul merkezli olarak faaliyet gösteren Ribbony, 50'den fazla markanın dijital dönüşüm yolculuğuna eşlik etmektedir.",
     "storyEyebrow": "Hikayemiz",
     "storyTitle": "Nereden Geldik, Nereye Gidiyoruz?",
-    "storyP1": "Ribbony, dijital pazarlamanın karmaşık dünyasını markalar için sadeleştirmek amacıyla kuruldu. Ajans kurucularımız, büyük yapılardaki bürokratik süreçlerin markaların potansiyelini sınırladığını gözlemleyerek çevik, şeffaf ve sonuç odaklı bir model geliştirdi.",
+    "storyP1": "Ribbony, dijital pazarlamanın karmaşık dünyasını markalar için sadeleştirmek amacıyla kuruldu. Şirket kurucularımız, büyük yapılardaki bürokratik süreçlerin markaların potansiyelini sınırladığını gözlemleyerek çevik, şeffaf ve sonuç odaklı bir model geliştirdi.",
     "storyP2": "Bugün 50'den fazla marka ile çalışıyor, 120'yi aşkın projeyi başarıyla tamamlamış durumdayız. Ekibimiz; SEO uzmanları, içerik stratejistleri, paid media uzmanları ve kreatif tasarımcılardan oluşmaktadır.",
     "missionTitle": "Misyonumuz",
     "missionContent": "Markaların dijital potansiyelini veriye dayalı stratejiler ve yaratıcı içeriklerle en üst düzeye çıkarmak.",
@@ -382,6 +383,38 @@
   "cookies": {
     "pageTitle": "Çerez Politikası",
     "lastUpdated": "Son güncelleme: Ocak 2025"
+  },
+  "sss": {
+    "pageTitle": "SSS",
+    "heroTitle": "Sıkça Sorulan Sorular",
+    "heroDescription": "Merak ettiğiniz her şeyin cevabı burada. Bulamadıysanız bize yazın.",
+    "searchPlaceholder": "Soru ara...",
+    "noResults": "Aradığınız soruyu bulamadık.",
+    "categories": {
+      "all": "Tümü",
+      "genel": "Genel",
+      "hizmetler": "Hizmetler",
+      "fiyatlandirma": "Fiyatlandırma",
+      "teknik": "Teknik",
+      "surec": "Süreç"
+    }
+  },
+  "araclar": {
+    "pageTitle": "Araçlar",
+    "heroTitle": "Dijital Pazarlama Araçları",
+    "heroDescription": "Profesyonellerin kullandığı en iyi araçları keşfedin ve dijital stratejinizi güçlendirin.",
+    "categories": {
+      "all": "Tümü",
+      "seo": "SEO",
+      "sosyal-medya": "Sosyal Medya",
+      "reklam": "Reklam",
+      "analitik": "Analitik",
+      "ai": "Yapay Zeka"
+    },
+    "visitTool": "Aracı Ziyaret Et",
+    "freeLabel": "Ücretsiz",
+    "paidLabel": "Ücretli",
+    "freemiumLabel": "Freemium"
   },
   "notFound": {
     "title": "Sayfa Bulunamadı",
