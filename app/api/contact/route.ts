@@ -176,8 +176,8 @@ export async function POST(request: NextRequest) {
   try {
     const resend = new Resend(apiKey);
     await resend.emails.send({
-      from: 'Ribbony <noreply@ribbony.com>',
-      to: process.env.CONTACT_EMAIL ?? 'info@ribbony.com',
+      from: 'Ribbony <info@ribbonydigital.com>',
+      to: process.env.CONTACT_EMAIL ?? 'info@ribbonydigital.com',
       replyTo: data.email,
       subject: `Yeni İletişim Formu Mesajı — ${data.name}${data.company ? ` (${data.company})` : ''}`,
       html: buildEmailHtml(data),

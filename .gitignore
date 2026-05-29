@@ -3,3 +3,5 @@ public/videos/
 public/images/*.png
 public/videos/
 public/images/
+.vercel
+.env*.local

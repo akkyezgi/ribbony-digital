@@ -8,7 +8,7 @@ const logos = [
   { src: '/images/hrsync-referans.png', alt: 'HRSync' },
   { src: '/images/mavvo-referans.png', alt: 'Mavvo' },
   { src: '/images/mohan-referans.png', alt: 'Mohan' },
-  { src: '/images/ödüyo-referans.png', alt: 'Ödüyo' },
+  { src: '/images/oduyo-referans.png', alt: 'Ödüyo' },
   { src: '/images/solentos-referans.png', alt: 'Solentos' },
 ];
 

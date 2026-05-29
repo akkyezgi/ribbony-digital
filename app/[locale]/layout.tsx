@@ -13,8 +13,38 @@ import AnalyticsProvider from '@/components/ui/AnalyticsProvider';
 import { ContactPopupProvider } from '@/lib/contact-popup-context';
 import ContactPopup from '@/components/ui/ContactPopup';
 import FloatingCta from '@/components/ui/FloatingCta';
+import Script from 'next/script';
 import '@/app/globals.css';
 import { setRequestLocale } from 'next-intl/server';
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Ribbony Digital',
+  url: 'https://www.ribbonydigital.com',
+  logo: 'https://www.ribbonydigital.com/_next/image?url=%2Fimages%2Fribbony-web-logo.png&w=640&q=75',
+  description:
+    'SEO, sosyal medya yönetimi, reklam yönetimi, içerik üretimi ve e-ticaret danışmanlığı alanlarında veriye dayalı stratejilerle markaların dijital varlığını güçlendiren ve dijitalde zirveye taşıyan dijital pazarlama şirketi.',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '100. Yıl Bulvarı, Ostim Prestij Plaza No:55A/26',
+    addressLocality: 'Yenimahalle',
+    addressRegion: 'Ankara',
+    addressCountry: 'TR',
+    postalCode: '06900',
+  },
+  contactPoint: {
+    '@type': 'ContactPoint',
+    telephone: '+90-551-101-42-88',
+    email: 'info@ribbonydigital.com',
+    contactType: 'customer service',
+    availableLanguage: 'Turkish',
+  },
+  sameAs: [
+    'https://www.linkedin.com/company/ribbony',
+    'https://www.instagram.com/ribbonydigital',
+  ],
+};
 
 // ─── Fonts ────────────────────────────────────────────────────────────────────
 
@@ -77,6 +107,14 @@ export default async function LocaleLayout({ children, params: { locale } }: Loc
       className={`${poppins.variable} ${raleway.variable}`}
       suppressHydrationWarning
     >
+      <head>
+        <Script
+          id="ld-organization"
+          type="application/ld+json"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+      </head>
       <body className="bg-white text-[#3d3d3d] antialiased">
         <NextIntlClientProvider messages={messages}>
           <ContactPopupProvider>

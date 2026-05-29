@@ -258,7 +258,7 @@ export function organizationSchema() {
     },
     sameAs: [
       'https://www.instagram.com/ribbonydigital',
-      'https://www.linkedin.com/company/ribbonydigital',
+      'https://www.linkedin.com/company/ribbony/',
       'https://twitter.com/ribbonydigital',
     ],
   };

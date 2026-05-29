@@ -37,7 +37,7 @@ function XIcon() {
 
 const socialLinks = [
   { href: 'https://www.instagram.com/ribbonydigital', label: 'Instagram', Icon: InstagramIcon },
-  { href: 'https://www.linkedin.com/company/ribbonydigital', label: 'LinkedIn', Icon: LinkedInIcon },
+  { href: 'https://www.linkedin.com/company/ribbony/', label: 'LinkedIn', Icon: LinkedInIcon },
   { href: 'https://twitter.com/ribbonydigital', label: 'X (Twitter)', Icon: XIcon },
 ];
 

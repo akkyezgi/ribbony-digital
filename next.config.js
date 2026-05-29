@@ -6,6 +6,16 @@ const nextConfig = {
     remotePatterns: [],
     formats: ['image/avif', 'image/webp'],
   },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'ribbonydigital.com' }],
+        destination: 'https://www.ribbonydigital.com/:path*',
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
